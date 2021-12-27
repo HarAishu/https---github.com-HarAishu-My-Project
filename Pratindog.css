@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    border: 0;
+}
+#sec1{
+    background-color: rgb(235, 2, 80);
+    /* height: 80vh; */
+    width: 100%;
+
+}
+
+  
+
+.logo{
+    /* font-family: 'Merriweather', serif; */
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Sacramento', cursive;
+    color: whitesmoke;
+    font-size: 50px;
+    margin-left: 150px;
+}
+.intro{
+    font-family: 'Merriweather', serif;
+    color: whitesmoke;
+    font-size: 50px;
+    margin-left: 150px;
+}
+.applebtn{
+    color: whitesmoke;
+    background-color: rgb(54, 47, 47);
+    padding: 10px 10px;
+    border: 1px solid rgb(54, 47, 47) ;
+    border-radius: 5px;
+    font-size: large; 
+    margin-left: 150px;
+    font-family: 'Montserrat', sans-serif;
+}
+.playstore{
+    background-color: transparent;
+    border: 1px solid rgb(54, 47, 47) ;
+    border-radius: 5px;
+    padding: 10px 10px;
+    font-size: large; 
+    font-family: 'Montserrat', sans-serif;
+}
+.position{
+    overflow: hidden;
+}
+.collapse{
+     display: flex;
+   justify-content: center;
+    font-family: 'Merriweather', serif;
+}
+.dog{
+    margin: auto;
+    position: absolute;
+   transform: rotate(25deg);
+  height: 450px;
+  width: 250px;
+  overflow: hidden;
+}
