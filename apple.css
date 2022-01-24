@@ -3,69 +3,62 @@
     padding: 0;
 }
 body{
-    height: 100vh;
+    display: flex;
     width: 100%;
-    background-color: rgb(62, 131, 116);
-    position: relative;
-
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
 }
 .container{
-    height: 700px;
-    width: 600px ;
-    background-color: white;
-    position: absolute;
-    margin: 50px 100px;
     display: flex;
-    border-radius: 5px;
-}
-.div1{
-    box-shadow: 4px 4px 25px -2px rgba(0,0,0, 0.3);
-}
-.photo-container{
-    background-color: yellowgreen;
-    position: relative;
-    width: min-content;
-    width: 300px;
+    align-items: center;
+    justify-content: center;
+    background-color: aliceblue;
+    padding: 2%;
     height: 600px;
-    margin-top: 50px;
-    margin-left: -40px;
-    border-radius: 5px;
-    
+    width: 500px;
 }
 .icons{
     display: flex;
     justify-content: space-between;
-    padding: 15px 15px;
-    color: white;
-}
-.apple{
-    position: absolute;
-    /* padding-right: 100px; */
-    margin-left: -80px;
-    /* z-index: -20px; */
-}
-.apple_parts{
-    position: absolute;
-    bottom: 0px;
-    width: 100%;
-   height: 8em;
-   background-color: white;
-   /* padding: 25px; */
-   border-radius: 0 0 5px 5px;
-
-}
-.apple_parts ul{
-    list-style: none;
-    display: flex;
-    padding: 25px auto;
-  
-}
-
-.div2{
-    text-align: center;
-    margin-top: 70px;
-    margin-left: 20px;
+    padding: 10px;
 }
 .icons i{
-    cursor: pointer;
+    color: white;
 }
+.div1{
+    background-color: azure;
+   height: 550px;
+   width: 300px ;
+    margin: 10% 10% 10% -30% ;
+    /* padding: 4%; */
+    border-radius: 5px;
+    box-shadow:  10px 10px  rgb(196, 186, 186);
+    
+}
+.apple_pic{
+    background-color: greenyellow;
+    background: radial-gradient(#F5F5F5 30%,greenyellow 70%);
+    height: 75%;
+}
+.apple_parts{
+padding: 40px 0;
+}
+.apple img{
+    margin-left:-30% ;
+    
+}
+ .apple_parts ul, .list ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.apple_parts li, .list li{
+    list-style: none;
+}
+.apple_parts img{
+    border: 1px solid rgba(128, 128, 128, 0.308);
+}
+
