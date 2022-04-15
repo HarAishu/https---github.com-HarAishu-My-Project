@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            .container{
+                background-color: black;
+                width: 100%;
+                height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            #clockId{
+                color: green;
+                text-shadow: 5px aqua;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="clockId">time</h1>
+    </div>
+    <script>
+        function clockfun(){
+            let date = new Date();
+            let h = date.getHours();
+            let m = date.getMinutes();
+            let s = date.getSeconds();
+            let session = "AM";
+
+            if(h==0){
+                h = 12;
+                
+            }
+            if(h>12){
+                h = h - 12;
+                session = "PM";
+            }
+
+            h = (h<10) ? "0" + h : h;
+            m = (m<10) ? "0" + m : m;
+            s = (s<10) ? "0" + s : s;
+
+            
+
+            setTimeout(clockfun, 1000);
+        //    document.write(h + ":" + m + ":" + s + " " + session);
+            document.getElementById('clockId').innerHTML = h + ":" + m + ":" + s + " " + session;
+        }
+        clockfun();
+    </script>
+</body>
+</html>
